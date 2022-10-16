@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color1: #03738c;
+  --color2: #05dbf2;
+}
+
+/* ------ Barra de rolagen customizada -------*/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color1) #070d12;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #070d12;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color1);
+  border-radius: 20px;
+  border: 3px solid #070d12;
+}
+
+/* ------------------------- */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'VT323', monospace;
+  background-image: url(../images/imagem-de-fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 18px;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.cartao {
+  background-color: #ffffff00;
+  width: 100%;
+  max-width: 370px;
+  border: 2px solid var(--color1);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  transition: all 0.3s;
+  backdrop-filter: blur(15px);
+}
+
+.cartao:hover {
+  box-shadow: 0 0 10px 1px var(--color1);
+}
+
+.cartao .minhas-informacoes {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.cartao .minhas-informacoes img {
+  width: 96px;
+  border-radius: 50%;
+  border: 3px solid var(--color2);
+}
+
+.minhas-informacoes .nome {
+  font-size: 26px;
+}
+
+.minhas-informacoes .cargo {
+  font-size: 20px;
+  color: #c7c7c7;
+}
+
+.cartao .conteudo {
+  margin-top: 15px;
+}
+
+.cartao .abas {
+  display: flex;
+}
+
+.abas .aba {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cartao .abas img {
+  width: 30px;
+}
+
+.aba.selecionado {
+  background-color: #262626ab;
+  backdrop-filter: blur(10px);
+}
+
+.cartao .informacoes-abas {
+  background-color: #262626ab;
+  backdrop-filter: blur(10px);
+}
+
+.aba:hover {
+  background-color: #383838ab;
+}
+
+.informacoes-abas .informacao {
+  min-height: 260px;
+  padding: 15px;
+  display: none;
+}
+
+.informacao.selecionado {
+  display: block;
+}
+
+.informacao .sub-titulo {
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.informacao .descricao {
+  font-size: 20px;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.descricao span {
+  color: var(--color2);
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.redes-sociais li a {
+  display: block;
+  text-align: center;
+  width: 250px;
+  color: #f3f3f3;
+  padding: 10px;
+  font-size: 20px;
+  transition: all 0.2s;
+  border-radius: 3px;
+}
+
+.redes-sociais .curriculo {
+  background-color: #06c185;
+}
+
+.redes-sociais .linkedin {
+  background-color: #1e87ed;
+}
+
+.redes-sociais .github {
+  background-color: #545454;
+}
+
+.redes-sociais li a:hover {
+  filter: brightness(1.3);
+}
