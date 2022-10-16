@@ -4,7 +4,7 @@
 
 Mini portifólio desenvolvido com html css e js no evento MapaDev Week dos gêmeos Dev Em Dobro, onde contem minhas informacoes. 
 
-[🔗 Clique aqui para acessar](https://andersonrodrigs.github.io/Calculadora-De-Medias/)
+[🔗 Clique aqui para acessar](https://andersonrodrigs.github.io/Mini-Portifolio/)
 
 ## 🛠 Tecnologias utilizadas:
 
