@@ -1,5 +1,5 @@
 # Calculadora de médias
-![image](https://user-images.githubusercontent.com/105132452/196051669-e6d5b82d-53f1-4745-b0f3-9b9957e7ff70.png)
+
 ## Sobre o projeto:
 
 Mini portifólio desenvolvido com html css e js no evento MapaDev Week dos gêmeos Dev Em Dobro, onde contem minhas informacoes. 
